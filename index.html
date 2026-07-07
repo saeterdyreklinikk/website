@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="nb">
+    <head>
+        <meta charset="utf-8" />
+        <title>Sæter Dyreklinikk</title>
+        <meta name="description" content="Hos Sæter Dyreklinikk får din beste venn den beste behandlingen den fortjener, fra erfarne veterinærer som elsker jobben sin." />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="styles.css" />
+        <link rel="icon" href="img/favicon-dark.svg" type="image/svg+xml" media="(prefers-color-scheme: dark)">
+        <link rel="icon" href="img/favicon-light.svg" type="image/svg+xml" media="(prefers-color-scheme: light)">
+    </head>
+    <body>
+
+        <!-- MENU AND SIDEBAR ============================================================================================ -->
+
+        <header class="nav-section">
+            <div class="container">
+                <a href="#" class="logo" onclick="scrollTopClearHash()">
+                    <!-- <img src="img/logo-horizontal-dark-2.svg" alt="Sæter Dyreklinikk Logo" /> -->
+                    <img src="img/logo-horizontal.svg" alt="Sæter Dyreklinikk Logo" />
+                </a>
+                <nav class="nav-menu narrow">
+                    <!-- <a class="btn-dark" href="https://google.com" target="_blank">Bestill time</a> -->
+                    <button onclick="navDialog.showModal()" aria-label="Åpne menyen">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" height="32px" width="32px" fill="#566b5b"><path d="M120-700v-60h720v60H120Zm0 500v-60h720v60H120Zm0-250v-60h720v60H120Z"/></svg>
+                    </button>
+                </nav>
+                <nav class="nav-menu full">
+                    <!-- <a href="#prices" class="btn-dark">Tjenester og priser</a> -->
+                    <a href="#about" class="btn-dark">Ansatte</a>
+                    <a href="#contact" class="btn-dark">Kontakt</a>
+                    <!-- <a class="btn-primary" href="https://google.com" target="_blank">Bestill time</a> -->
+                </nav>
+            </div>
+
+            <dialog id="nav-dialog" class="nav-dialog">
+                <div>
+                    <div class="nav-dialog-close-wrap">
+                        <button onclick="navDialog.close()" aria-label="Lukk menyen">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" height="32px" width="32px" fill="#566b5b"><path d="m249-207-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z"/></svg>
+                        </button>
+                    </div>
+                    <nav class="nav-dialog-content">
+                        <!-- <a href="#prices" class="btn-dark">Tjenester og priser</a> -->
+                        <a href="#about" class="btn-dark">Ansatte</a>
+                        <a href="#contact" class="btn-dark">Kontakt</a>
+                        <!-- <a class="btn-primary" href="https://google.com" target="_blank">Bestill time</a> -->
+                    </nav>
+                    <img class="logo" src="img/logo-vertical-dark.svg" alt="Sæter Dyreklinikk Logo" />
+                </div>
+            </dialog>
+        </header>
+
+        <!-- HERO SECTION ============================================================================================ -->
+
+        <main>
+
+            <section class="section-hero">
+                <div class="container">
+                    <h1 class="site-title">Snart er vi klare til å ønske deg og ditt kjæledyr velkommen</h1>
+                    <!-- <h1 class="site-title">Omsorg for dyr, hver dag</h1>
+                    <p class="site-subtitle">Sæter Dyreklinikk tilbyr moderne veterinærtjenester med fokus på trygghet, kvalitet og personlig oppfølging.</p> -->
+                    <div class="hero-contact">
+                        <!-- <a class="btn-primary" href="https://google.com" target="_blank">Bestill time</a> -->
+                        <a class="btn-primary" href="mailto:hei@saeterdyreklinikk.no?subject=Interesse for åpning&body=Hei!
+%0D%0A%0D%0A
+Jeg ønsker å få beskjed når dere åpner i august.
+%0D%0A%0D%0A
+Vennlig hilsen">Hold meg oppdatert</a>
+                        <!-- <a href="tel:+4712345678" class="btn-light">
+                            <svg class="icon-light" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="M795-120q-116 0-236.5-56T335-335Q232-438 176-558.5T120-795q0-19.29 12.86-32.14Q145.71-840 165-840h140q14 0 24 10t14 25l26.93 125.64Q372-665 369.5-653.5t-10.73 19.73L259-533q26 44 55 82t64 72q37 38 78 69.5t86 55.5l95-98q10-11 23.15-15 13.15-4 25.85-2l119 26q15 4 25 16.04 10 12.05 10 26.96v135q0 19.29-12.86 32.14Q814.29-120 795-120ZM229-588l81-82-23-110H180q2 42 13.5 88.5T229-588Zm369 363q41 19 89 31t93 14v-107l-103-21-79 83ZM229-588Zm369 363Z"/></svg>
+                            123 45 678
+                        </a> -->
+                    </div>
+                </div>
+            </section>
+
+            <!-- ABOUT THE CLINIC ---------------------------------------------------------------------------------------- -->
+
+            <section id="the-clinic" class="section-clinic">
+                <div class="container">
+                    <h2>Om klinikken</h2>
+                    <div class="clinic-grid">
+                        <div class="clinic-desc">
+                            <p>Sæter Dyreklinikk er en frittstående dyreklinikk etablert av to veterinærer og en dyrepleier med en felles lidenskap for god dyrevelferd og personlig oppfølging.</p>
+                            <p>Vi ønsker at både dyr og eiere skal føle seg trygge, sett og godt ivaretatt. Med høy faglig kompetanse og individuell tilpasning finner vi løsningen som er best for hvert enkelt dyr og eier.</p>
+                            <p>Hos Sæter Dyreklinikk møter du et engasjert team som bryr seg om både dyr og mennesker, og som ønsker å være en trygg samarbeidspartner gjennom hele dyrets liv.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- PRICES ---------------------------------------------------------------------------------------- -->
+
+
+
+            <!-- ABOUT THE TEAM ---------------------------------------------------------------------------------------- -->
+
+            <section id="about" class="section-team">
+                <div class="container">
+
+                    <h2 align="center">Våre ansatte</h2>
+                    <div class="team-grid">
+                        <article class="team-member">
+                            <div><img loading="lazy" src="img/logo-no-text.jpeg" alt="Aneta" /></div>
+                            <h3>Aneta</h3>
+                            <h4 class="job-title">Veterinær</h4>
+                            <p>Aneta har over 15 års erfaring som veterinær og har videreutdanning innen indremedisin for hund og katt. Hun har bred kompetanse fra smådyrpraksis, med særlig interesse for kattemedisin og bildediagnostikk. </p>
+                            <p>På klinikken utfører hun blant annet kirurgi, tannbehandling, utredning av indremedisinske sykdommer og behandling av akuttpasienter. </p>
+                            <p>Aneta er opptatt av å gi trygg, faglig oppdatert og omsorgsfull behandling, tilpasset hvert enkelt kjæledyrs behov. </p>
+                        </article>
+
+                        <article class="team-member">
+                            <div><img loading="lazy" src="img/logo-no-text.jpeg" alt="Paula" /></div>
+                            <h3>Paula</h3>
+                            <h4 class="job-title">Veterinær</h4>
+                            <p>Paula har over 10 års erfaring som veterinær og har bred kompetanse innen smådyrpraksis for hund og katt. Hun har odontologi som satsingsområde og har gjennomført flere etterutdanningskurs innen tannbehandling på hund og katt. I tillegg har hun stor interesse for indremedisin og ultralyddiagnostikk. </p>
+                            <p>På klinikken utfører hun blant annet kirurgi, tannbehandling, utredning av indremedisinske sykdommer og behandling av akuttpasienter. </p>
+                            <p>Paula er sterkt engasjement for dyrenes helse, og tilbyr faglig oppdatert og omsorgsfull behandling tilpasset hver enkelt pasient. </p>
+                        </article>
+
+                        <article class="team-member">
+                            <div><img loading="lazy" src="img/logo-no-text.jpeg" alt="Eline" /></div>
+                            <h3>Eline</h3>
+                            <h4 class="job-title">Autorisert dyrepleier</h4>
+                            <p>Eline har over 10 års erfaring som dyrepleier, og har anestesi og analgesi som sitt interessefelt. Hun har gjennomført etterutdanning og flere kurs innen fagområdet, og brenner for individuelt tilpasset anestesi med mål om best mulig restitusjon for pasienten.</p>
+                            <p>På klinikken overvåker hun pasienter under anestesi, assisterer veterinærene ved kirurgiske inngrep og bistår ved utredning av indremedisinske sykdommer og behandling av akuttpasienter.</p>
+                            <p>Eline er opptatt av at både pasienten og dyreeiere skal føle seg sett, ivaretatt og trygge gjennom hele behandlingsforløpet.</p>
+                        </article>
+
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- CONTACT ---------------------------------------------------------------------------------------- -->
+
+            <section id="contact" class="section-contact">
+                <div class="container">
+
+                    <img class="logo" src="img/logo-vertical.svg" alt="Sæter Dyreklinikk Logo" />
+
+                    <div class="contact-and-hours">
+                        <div>
+                            <h2>Kontakt oss</h2>
+                            <address class="contact-info">
+                                <a class="btn-light" target="_blank" href="https://www.google.com/maps/place/Munkerudtunet+10,+1164+Oslo/@59.8596191,10.8105571,804m/data=!3m1!1e3!4m5!3m4!1s0x464168b557757fd7:0x8860674def9bd873!8m2!3d59.8596164!4d10.813132?entry=ttu&g_ep=EgoyMDI2MDYyOC4wIKXMDSoASAFQAw%3D%3D">
+                                    <svg class="icon-light" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="M220-180h150v-250h220v250h150v-390L480-765 220-570v390Zm-60 60v-480l320-240 320 240v480H530v-250H430v250H160Zm320-353Z"/></svg>
+                                    Munkerudtunet 10b, 1164 Oslo
+                                </a>
+                                <!-- <a class="btn-light" href="tel:+4712345678">
+                                    <svg class="icon-light" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="M795-120q-116 0-236.5-56T335-335Q232-438 176-558.5T120-795q0-19.29 12.86-32.14Q145.71-840 165-840h140q14 0 24 10t14 25l26.93 125.64Q372-665 369.5-653.5t-10.73 19.73L259-533q26 44 55 82t64 72q37 38 78 69.5t86 55.5l95-98q10-11 23.15-15 13.15-4 25.85-2l119 26q15 4 25 16.04 10 12.05 10 26.96v135q0 19.29-12.86 32.14Q814.29-120 795-120ZM229-588l81-82-23-110H180q2 42 13.5 88.5T229-588Zm369 363q41 19 89 31t93 14v-107l-103-21-79 83ZM229-588Zm369 363Z"/></svg>
+                                    123 45 678
+                                </a> -->
+                                <a class="btn-light" href="mailto:hei@saeterdyreklinikk.no">
+                                    <svg class="icon-light" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="M480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480v53q0 56-39.34 94.5Q801.31-294 744-294q-36.08 0-68.04-17.5Q644-329 627-361q-26 34-65.08 50.5Q522.83-294 480-294q-77.61 0-132.3-54Q293-402 293-480.01q0-78.02 54.5-133Q402-668 480-668t132.5 54.99Q667-558.02 667-480v53q0 30.61 22.5 51.81Q712-354 743.5-354t54-21.19Q820-396.39 820-427v-53q0-142.38-99-241.19T480-820q-142 0-241 99t-99 241q0 142 98.81 241 98.82 99 241.19 99h214v60H480Zm90-310.75q37-36.75 37-89.25 0-54-37.06-91t-90-37Q427-608 390-571t-37 91q0 52.5 37.06 89.25t90 36.75Q533-354 570-390.75Z" /></svg>
+                                    hei<small>@</small>saeterdyreklinikk.no
+                                </a>
+                            </address>
+                        </div>
+
+                        <div>
+                            <h2>Åpningstider</h2>
+                            <ul>
+                                <li aria-label="Mandag til Fredag, fra klokken 08:00 til 16:00">
+                                    <span aria-hidden="true">Man - Fre:</span>
+                                    <span aria-hidden="true">08:00 - 16:00</span>
+                                </li>
+
+                                <li aria-label="Lørdag og Søndag, Stengt">
+                                    <span aria-hidden="true">Lør - Søn:</span>
+                                    <span aria-hidden="true">Stengt</span>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+
+                </div>
+            </section>
+        </main>
+
+        <!-- FOOTER ============================================================================================ -->
+
+        <footer class="section-footer">
+            <div class="container">
+                <p>&copy; 2026 Sæter Dyreklinikk AS. <span>Alle rettigheter forbeholdes.</span></p>
+            </div>
+        </footer>
+
+        <a href="#" class="btn-top" onclick="scrollTopClearHash()">↑</a>
+
+        <!-- SCRIPTS ============================================================================================ -->
+
+        <script>
+            function scrollTopClearHash() {
+                setTimeout(() => history.replaceState(null, "", location.href.replaceAll(/#.*/g, "")), 5);
+                document.querySelectorAll("details").forEach(el => el.removeAttribute("open"));
+            }
+
+            function openPricesFirstGroup() {
+                document.querySelector(".section-prices details").setAttribute("open", true);
+            }
+            document.querySelectorAll("[href*='#prices']").forEach(el => el.onclick = () => setTimeout(openPricesFirstGroup, 500));
+
+            function autoOpenPricesFirstGroup() {
+                setTimeout(() => location.href.endsWith("#prices") && openPricesFirstGroup(), 500);
+            }
+            window.onhashchange = autoOpenPricesFirstGroup;
+            window.onload = autoOpenPricesFirstGroup;
+
+            document.addEventListener("scroll", () => document.body.classList.toggle("scrolled", Math.max(0, window.scrollY) >= 45));
+
+            const navDialog = document.querySelector('.nav-dialog');
+            navDialog.addEventListener("click", ev => ev.target === navDialog && navDialog.close());
+            navDialog.querySelectorAll("a").forEach(el => el.addEventListener("click", () => navDialog.close()));
+        </script>
+    </body>
+</html>
+`

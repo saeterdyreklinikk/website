@@ -551,6 +551,14 @@ section[id] {
         margin-left: -0.5rem;
     }
 
+    .contact-location-map {
+        max-width: min(100%, 390px);
+        img {
+            border-radius: 4px;
+            width: 100%;
+        }
+    }
+
     address {
         font-style: normal;
         display: flex;
